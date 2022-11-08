@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/155/155814.png?w=1800&t=st=1667242146~exp=1667242746~hmac=bcbc9e5fe8ab80282f9e2184e49244f2308b6f4d6444a0f29eeb8bf2e3fe2983" type="image/x-icon">
 
     <!-- Reset CSS -->
     <link rel="stylesheet" href="reset.css" />
@@ -11,7 +12,7 @@
     <!-- Main CSS -->
     <link rel="stylesheet" href="styles.css" />
 
-    <title>Banco de imágenes</title>
+    <title>Photo-BNK</title>
   </head>
   <body>
     <div class="page">
@@ -19,7 +20,8 @@
         <div class="header__primary">
           <img class="logo icon__clickable" height="30" width="30" src="https://cdn-icons-png.flaticon.com/512/155/155814.png?w=1800&t=st=1667242146~exp=1667242746~hmac=bcbc9e5fe8ab80282f9e2184e49244f2308b6f4d6444a0f29eeb8bf2e3fe2983" alt="">
         <div class="search__box">
-          <input type="text" placeholder="Buscar imágenes..." />
+          <input id="search__large" type="text" placeholder="Buscar imágenes..." />
+          <input id="search__small" type="text" placeholder="Buscar..." />
           <img class="icon__clickable" height="12" width="12" src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="">
         </div>
         </div>
@@ -41,18 +43,22 @@
         <div class="categories__item">Renders 3D</div>
         <div class="categories__item">Atletismo</div>
         <div class="categories__item">Película</div>
-        <div class="categories__item">Naturaleza</div>
+        <div class="categories__item item__selected">Naturaleza</div>
         <div class="categories__item">Arquitectura e Interiorismo</div>
         <div class="categories__item">Moda</div>
       </section>
       <aside>
         <h1 class="filter__title">Naturaleza</h1>
         <p class="filter__subtitle">Imágenes de todo lo que nuestro planeta tiene para ofrecer,  desde impresionantes paisajes marinos, cielos estrellados y todo lo demás.</p>
+        <h1 class="filter__title">Filtros avanzados</h1>
         <div class="filter__container">
           
           <div class="filter">
             <div class="filter__header">
               <p>Tamaño</p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up">
+                <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
             </div>
             <div >
                 <label class="check">
@@ -72,6 +78,9 @@
           <div class="filter">
             <div class="filter__header ft-border">
               <p>Tipo</p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up">
+                <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
             </div>
             <div>
               <label class="check">
@@ -91,6 +100,9 @@
           <div class="filter">
             <div class="filter__header ft-border">
               <p>Color</p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up">
+                <polyline points="18 15 12 9 6 15"></polyline>
+                </svg>
             </div>
             <div class="filter__body">
                 <div class="color" style="--hue: 0deg"></div>
