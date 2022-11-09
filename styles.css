@@ -213,8 +213,8 @@ aside h1:nth-child(3) {
 }
 
 
-.check__input:checked + .check__checkbox {
-    background-color: #000;
+.check__input {
+    accent-color: #000;
 }
 
 .color {
