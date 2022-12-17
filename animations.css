@@ -1,0 +1,76 @@
+.logo:hover {
+    animation: swing 0.5s linear infinite;
+    scale: 1.3;
+}
+
+.notification:hover {
+    animation: swing 1s linear;
+    scale: 1.3;
+}
+
+aside {
+    --translate: -15px;
+    transition: opacity 0.4s, translate 0.8s;
+    animation: 1.2s linear appear;
+}
+
+.filter__header > svg {
+    transition: all 0.5s;
+}
+
+
+.filter > *:nth-child(2) {
+    transition: all 0.5s;
+}
+
+.categories > * {
+    transition: all 0.5s;
+}
+
+.categories > *:hover {
+    border-bottom: 1px solid #7c7b7b;
+    box-shadow: inset 0 -2px #7c7b7b;
+}
+
+.masonry {
+  --translate: 5px;
+  transition: opacity 0.4s, translate 0.8s;
+  animation: 0.8s linear appear;
+}
+
+.item > img {
+    transition: scale 1s;
+}
+
+.item > img:hover {
+    scale: 1.05;
+    animation: pulse 5s linear infinite;
+}
+
+.social > *:nth-child(1):hover {
+    animation: heartBeat 2s linear infinite;
+}
+
+.social > *:nth-child(2):hover {
+    animation: wobble 2s linear infinite;
+}
+
+.social > *:nth-child(3):hover {
+    animation: jello 2s linear infinite;
+}
+
+.modal__content > img {
+    transition: scale 1s, opacity 1s;
+    animation: appear 0.5s linear;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0.5;
+    translate: var(--translate);
+  }
+  to {
+    opacity: 1;
+    translate: 0;
+  }
+}

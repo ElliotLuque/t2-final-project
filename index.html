@@ -4,13 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/155/155814.png?w=1800&t=st=1667242146~exp=1667242746~hmac=bcbc9e5fe8ab80282f9e2184e49244f2308b6f4d6444a0f29eeb8bf2e3fe2983" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.flaticon.com/512/155/155814.png?w=1800&t=st=1667242146~exp=1667242746~hmac=bcbc9e5fe8ab80282f9e2184e49244f2308b6f4d6444a0f29eeb8bf2e3fe2983"
+      type="image/x-icon"
+    />
 
     <!-- Reset CSS -->
     <link rel="stylesheet" href="reset.css" />
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="styles.css" />
+
+    <!-- Custom animations CSS -->
+    <link rel="stylesheet" href="animations.css" />
+
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
     <!-- Main JS -->
     <script src="main.js" defer></script>
@@ -21,22 +34,46 @@
     <div class="page">
       <header>
         <div class="header__primary">
-          <img class="logo icon__clickable" height="30" width="30" src="https://cdn-icons-png.flaticon.com/512/155/155814.png?w=1800&t=st=1667242146~exp=1667242746~hmac=bcbc9e5fe8ab80282f9e2184e49244f2308b6f4d6444a0f29eeb8bf2e3fe2983" alt="">
-        <div class="search__box">
-          <input id="search__large" type="text" placeholder="Buscar imágenes..." />
-          <input id="search__small" type="text" placeholder="Buscar..." />
-          <img class="icon__clickable" height="12" width="12" src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="">
-        </div>
+          <img
+            class="logo icon__clickable"
+            height="30"
+            width="30"
+            src="https://cdn-icons-png.flaticon.com/512/155/155814.png?w=1800&t=st=1667242146~exp=1667242746~hmac=bcbc9e5fe8ab80282f9e2184e49244f2308b6f4d6444a0f29eeb8bf2e3fe2983"
+            alt=""
+          />
+          <div class="search__box">
+            <input
+              id="search__large"
+              type="text"
+              placeholder="Buscar imágenes..."
+            />
+            <input id="search__small" type="text" placeholder="Buscar..." />
+            <img
+              class="icon__clickable"
+              height="12"
+              width="12"
+              src="https://cdn-icons-png.flaticon.com/512/622/622669.png"
+              alt=""
+            />
+          </div>
         </div>
         <div class="header__secondary">
-          <button class="header__upload">
-            Subir imagen
-          </button>
-          <img width="15" height="15" src="https://cdn-icons-png.flaticon.com/512/60/60753.png" class="icon__clickable">
+          <button class="header__upload">Subir imagen</button>
+          <img
+            width="15"
+            height="15"
+            src="https://cdn-icons-png.flaticon.com/512/60/60753.png"
+            class="icon__clickable notification"
+          />
           <div class="header__user"></div>
         </div>
         <div class="header__terciary">
-          <img width="15" height="15" src="https://cdn-icons-png.flaticon.com/512/2976/2976215.png" alt="">
+          <img
+            width="15"
+            height="15"
+            src="https://cdn-icons-png.flaticon.com/512/2976/2976215.png"
+            alt=""
+          />
         </div>
       </header>
       <section class="categories">
@@ -52,50 +89,74 @@
       </section>
       <aside>
         <h1 class="filter__title">Naturaleza</h1>
-        <p class="filter__subtitle">Imágenes de todo lo que nuestro planeta tiene para ofrecer,  desde impresionantes paisajes marinos, cielos estrellados y todo lo demás.</p>
+        <p class="filter__subtitle">
+          Imágenes de todo lo que nuestro planeta tiene para ofrecer, desde
+          impresionantes paisajes marinos, cielos estrellados y todo lo demás.
+        </p>
         <h1 class="filter__title">Filtros avanzados</h1>
         <div class="filter__container">
-          
           <div class="filter">
             <div class="filter__header">
               <p>Tamaño</p>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-chevron-up"
+              >
                 <polyline points="18 15 12 9 6 15"></polyline>
-                </svg>
+              </svg>
             </div>
-            <div >
-                <label class="check">
-                  <input type="checkbox" class="check__input" >
-                  <p class="check__text">Pequeño</p>
-                </label>
-                <label class="check">
-                  <input type="checkbox" class="check__input" checked>
-                  <p class="check__text">Mediano</p>
-                </label>
-                <label class="check">
-                  <input type="checkbox" class="check__input" checked>
-                  <p class="check__text">Grande</p>
-                </label>
+            <div>
+              <label class="check">
+                <input type="checkbox" class="check__input" />
+                <p class="check__text">Pequeño</p>
+              </label>
+              <label class="check">
+                <input type="checkbox" class="check__input" checked />
+                <p class="check__text">Mediano</p>
+              </label>
+              <label class="check">
+                <input type="checkbox" class="check__input" checked />
+                <p class="check__text">Grande</p>
+              </label>
             </div>
           </div>
           <div class="filter">
             <div class="filter__header ft-border">
               <p>Tipo</p>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-chevron-up"
+              >
                 <polyline points="18 15 12 9 6 15"></polyline>
-                </svg>
+              </svg>
             </div>
             <div>
               <label class="check">
-                <input type="checkbox" class="check__input" >
+                <input type="checkbox" class="check__input" />
                 <p class="check__text">PNG</p>
               </label>
               <label class="check">
-                <input type="checkbox" class="check__input" checked>
+                <input type="checkbox" class="check__input" checked />
                 <p class="check__text">JPEG</p>
               </label>
               <label class="check">
-                <input type="checkbox" class="check__input">
+                <input type="checkbox" class="check__input" />
                 <p class="check__text">TIFF</p>
               </label>
             </div>
@@ -103,69 +164,256 @@
           <div class="filter">
             <div class="filter__header ft-border">
               <p>Color</p>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-chevron-up"
+              >
                 <polyline points="18 15 12 9 6 15"></polyline>
-                </svg>
+              </svg>
             </div>
             <div class="filter__body">
-                <div class="color" style="--hue: 0deg"></div>
-                <div class="color" style="--hue: 30deg"></div>
-                <div class="color" style="--hue: 60deg"></div>
-                <div class="color" style="--hue: 90deg"></div>
-                <div class="color" style="--hue: 120deg"></div>
-                <div class="color" style="--hue: 150deg"></div>
-                <div class="color" style="--hue: 180deg"></div>
-                <div class="color" style="--hue: 210deg"></div>
-                <div class="color" style="--hue: 240deg"></div>
-                <div class="color" style="--hue: 270deg"></div>
-                <div class="color" style="--hue: 300deg"></div>
-                <div class="color" style="--hue: 330deg"></div>
+              <div class="color" style="--hue: 0deg"></div>
+              <div class="color" style="--hue: 30deg"></div>
+              <div class="color" style="--hue: 60deg"></div>
+              <div class="color" style="--hue: 90deg"></div>
+              <div class="color" style="--hue: 120deg"></div>
+              <div class="color" style="--hue: 150deg"></div>
+              <div class="color" style="--hue: 180deg"></div>
+              <div class="color" style="--hue: 210deg"></div>
+              <div class="color" style="--hue: 240deg"></div>
+              <div class="color" style="--hue: 270deg"></div>
+              <div class="color" style="--hue: 300deg"></div>
+              <div class="color" style="--hue: 330deg"></div>
             </div>
           </div>
         </div>
       </aside>
-      
+
       <main>
         <h1>Naturaleza</h1>
-        <p>Imágenes de todo lo que nuestro planeta tiene para ofrecer,  desde impresionantes paisajes marinos, cielos estrellados y todo lo demás.</p>
+        <p>
+          Imágenes de todo lo que nuestro planeta tiene para ofrecer, desde
+          impresionantes paisajes marinos, cielos estrellados y todo lo demás.
+        </p>
         <div class="masonry">
-          <div class="item tall"><img src="https://images.unsplash.com/photo-1665233658197-68150976f697?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="" /></div>
-          <div class="item"><img src="https://images.unsplash.com/photo-1567367378637-0bc5be04c616?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2669&q=80" alt="" /></div>
-          <div class="item"><img src="https://images.unsplash.com/photo-1666547755433-ae6c68f654cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="" /></div>
-          <div class="item wide"><img src="https://images.unsplash.com/photo-1666213233530-1891c515baf6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2729&q=80" alt="" /></div>
-          <div class="item big"><img src="https://images.unsplash.com/photo-1657841697977-bde4ec801bea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=988&q=80" alt="" /></div>
-          <div class="item tall"><img src="https://images.unsplash.com/photo-1660735839163-a8dd64e6d23c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="" /></div>
-          <div class="item"><img src="https://images.unsplash.com/photo-1660840051861-99f03945984d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="" /></div>
-          <div class="item"><img src="https://images.unsplash.com/photo-1660750259832-d9340cadfedd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80" alt="" /></div>
-          <div class="item tall"><img src="https://images.unsplash.com/photo-1660665374000-5c32141e4a5b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1364&q=80" alt="" /></div>
-          <div class="item"><img src="https://images.unsplash.com/photo-1662574429291-5d9c9b2ff6c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3132&q=80" alt="" /></div>
-          <div class="item"><img src="https://images.unsplash.com/photo-1661792850341-e599500c2d0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="" /></div>
-          <div class="item tall"><img src="https://images.unsplash.com/photo-1660560672343-b1ed7f24cf8c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80" alt="" /></div>
-          <div class="item"><img src="https://images.unsplash.com/photo-1666107677986-c264fc8f908e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80" alt="" /></div>
-          <div class="item"><img src="https://images.unsplash.com/photo-1660675716662-7e7b19395d44?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="" /></div>
-          <div class="item tall"><img src="https://images.unsplash.com/photo-1659636688047-65f34ef54da7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="" /></div>
-          <div class="item"><img src="https://images.unsplash.com/photo-1665406857887-e53cfdbee0d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="" /></div>
-          <div class="item"><img src="https://images.unsplash.com/photo-1661511762608-fda6b7b45f18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3185&q=80" alt="" /></div>
-          <div class="item big"><img src="https://images.unsplash.com/photo-1666126452579-f032d653c7f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2680&q=80" alt="" /></div>
-          <div class="item tall"><img src="https://images.unsplash.com/photo-1660866838821-62258896aa8d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="" /></div>
-          <div class="item"><img src="https://images.unsplash.com/photo-1665423608657-e20cb8de5932?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1305&q=80" alt="" /></div>
-          <div class="item"><img src="https://images.unsplash.com/photo-1664999407875-b4d94999f9be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2274&q=80" alt="" /></div>
-          <div class="item"><img src="https://images.unsplash.com/photo-1665721315976-f9b22b1c917e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1297&q=80" alt="" /></div>
-          <div class="item tall"><img src="https://images.unsplash.com/photo-1666059369035-052b20623b4a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="" /></div>
-          <div class="item"><img src="https://images.unsplash.com/photo-1665591239163-848a79a758e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80" alt="" /></div>
-          <div class="item wide"><img src="https://images.unsplash.com/photo-1665582385581-61473db8dc8c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3893&q=80" alt="" /></div>
-          <div class="item big"><img src="https://images.unsplash.com/photo-1665319545079-31f2c242bcf5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80" alt="" /></div>
-          <div class="item"><img src="https://images.unsplash.com/photo-1654380689562-74d909ac4364?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="" /></div>
-          <div class="item tall"><img src="https://images.unsplash.com/photo-1663409189430-418c72ff3bad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="" /></div>
-          <div class="item tall"><img src="https://images.unsplash.com/photo-1665654296096-0a5aecc0fb72?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80" alt="" /></div>
-          <div class="item"><img src="https://images.unsplash.com/photo-1663174048224-7bfb7d11a98b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="" /></div>
-          <div class="item wide"><img src="https://images.unsplash.com/photo-1665344813313-76e0175e54d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80" alt="" /></div>
-          <div class="item"><img src="https://images.unsplash.com/photo-1661760625983-298c7f97fa9b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="" /></div>
-          <div class="item"><img src="https://images.unsplash.com/photo-1588492885706-b8917f06df77?ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80" alt="" /></div>
-          <div class="item wide"><img src="https://images.unsplash.com/photo-1660937472479-f0d9608e8370?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2671&q=80" alt="" /></div>
+          <div class="item tall">
+            <img
+              src="https://images.unsplash.com/photo-1665233658197-68150976f697?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+              alt=""
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://images.unsplash.com/photo-1567367378637-0bc5be04c616?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2669&q=80"
+              alt=""
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://images.unsplash.com/photo-1666547755433-ae6c68f654cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+              alt=""
+            />
+          </div>
+          <div class="item wide">
+            <img
+              src="https://images.unsplash.com/photo-1666213233530-1891c515baf6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2729&q=80"
+              alt=""
+            />
+          </div>
+          <div class="item big">
+            <img
+              src="https://images.unsplash.com/photo-1657841697977-bde4ec801bea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=988&q=80"
+              alt=""
+            />
+          </div>
+          <div class="item tall">
+            <img
+              src="https://images.unsplash.com/photo-1660735839163-a8dd64e6d23c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+              alt=""
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://images.unsplash.com/photo-1660840051861-99f03945984d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+              alt=""
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://images.unsplash.com/photo-1660750259832-d9340cadfedd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80"
+              alt=""
+            />
+          </div>
+          <div class="item tall">
+            <img
+              src="https://images.unsplash.com/photo-1660665374000-5c32141e4a5b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1364&q=80"
+              alt=""
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://images.unsplash.com/photo-1662574429291-5d9c9b2ff6c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3132&q=80"
+              alt=""
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://images.unsplash.com/photo-1661792850341-e599500c2d0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+              alt=""
+            />
+          </div>
+          <div class="item tall">
+            <img
+              src="https://images.unsplash.com/photo-1660560672343-b1ed7f24cf8c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80"
+              alt=""
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://images.unsplash.com/photo-1666107677986-c264fc8f908e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80"
+              alt=""
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://images.unsplash.com/photo-1660675716662-7e7b19395d44?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+              alt=""
+            />
+          </div>
+          <div class="item tall">
+            <img
+              src="https://images.unsplash.com/photo-1659636688047-65f34ef54da7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+              alt=""
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://images.unsplash.com/photo-1665406857887-e53cfdbee0d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+              alt=""
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://images.unsplash.com/photo-1661511762608-fda6b7b45f18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3185&q=80"
+              alt=""
+            />
+          </div>
+          <div class="item big">
+            <img
+              src="https://images.unsplash.com/photo-1666126452579-f032d653c7f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2680&q=80"
+              alt=""
+            />
+          </div>
+          <div class="item tall">
+            <img
+              src="https://images.unsplash.com/photo-1660866838821-62258896aa8d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+              alt=""
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://images.unsplash.com/photo-1665423608657-e20cb8de5932?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1305&q=80"
+              alt=""
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://images.unsplash.com/photo-1664999407875-b4d94999f9be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2274&q=80"
+              alt=""
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://images.unsplash.com/photo-1665721315976-f9b22b1c917e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1297&q=80"
+              alt=""
+            />
+          </div>
+          <div class="item tall">
+            <img
+              src="https://images.unsplash.com/photo-1666059369035-052b20623b4a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+              alt=""
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://images.unsplash.com/photo-1665591239163-848a79a758e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80"
+              alt=""
+            />
+          </div>
+          <div class="item wide">
+            <img
+              src="https://images.unsplash.com/photo-1665582385581-61473db8dc8c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3893&q=80"
+              alt=""
+            />
+          </div>
+          <div class="item big">
+            <img
+              src="https://images.unsplash.com/photo-1665319545079-31f2c242bcf5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80"
+              alt=""
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://images.unsplash.com/photo-1654380689562-74d909ac4364?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+              alt=""
+            />
+          </div>
+          <div class="item tall">
+            <img
+              src="https://images.unsplash.com/photo-1663409189430-418c72ff3bad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+              alt=""
+            />
+          </div>
+          <div class="item tall">
+            <img
+              src="https://images.unsplash.com/photo-1665654296096-0a5aecc0fb72?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80"
+              alt=""
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://images.unsplash.com/photo-1663174048224-7bfb7d11a98b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+              alt=""
+            />
+          </div>
+          <div class="item wide">
+            <img
+              src="https://images.unsplash.com/photo-1665344813313-76e0175e54d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80"
+              alt=""
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://images.unsplash.com/photo-1661760625983-298c7f97fa9b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
+              alt=""
+            />
+          </div>
+          <div class="item">
+            <img
+              src="https://images.unsplash.com/photo-1588492885706-b8917f06df77?ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80"
+              alt=""
+            />
+          </div>
+          <div class="item wide">
+            <img
+              src="https://images.unsplash.com/photo-1660937472479-f0d9608e8370?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2671&q=80"
+              alt=""
+            />
+          </div>
         </div>
         <div class="main__pagination">
-          <img src="https://cdn-icons-png.flaticon.com/512/271/271220.png" alt="">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/271/271220.png"
+            alt=""
+          />
           <div class="main__pagination-item">1</div>
           <div class="main__pagination-item">2</div>
           <div class="main__pagination-item active">3</div>
@@ -177,41 +425,47 @@
           <div class="main__pagination-item">9</div>
           <div class="main__pagination-item">10</div>
           <div class="main__pagination-item">...</div>
-          <img src="https://cdn-icons-png.flaticon.com/512/271/271228.png" alt="">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/271/271228.png"
+            alt=""
+          />
         </div>
       </main>
       <footer>
         <div class="social">
-          <div><img src="https://cdn-icons-png.flaticon.com/512/20/20837.png" alt=""></div>
-          <div><img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt=""></div>
-          <div><img src="https://cdn-icons-png.flaticon.com/512/733/733635.png" alt=""></div>
+          <div>
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/20/20837.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/87/87390.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/733/733635.png"
+              alt=""
+            />
+          </div>
         </div>
-        <p class="footer__links"> 
-          <span>
-            Información
-          </span>  
-          <span>
-            Soporte
-          </span>
-          <span>
-            Contacto
-          </span>
+        <p class="footer__links">
+          <span> Información </span>
+          <span> Soporte </span>
+          <span> Contacto </span>
         </p>
         <p class="footer__links">
-          <span>
-            Términos de uso
-          </span>
-          <span>
-            Política de privacidad
-          </span>
+          <span> Términos de uso </span>
+          <span> Política de privacidad </span>
         </p>
-        <p class="footer__copyright">© 2022 - Photo-BANK </p>
+        <p class="footer__copyright">© 2022 - Photo-BANK</p>
       </footer>
     </div>
     <div id="modal">
-      <div class="modal__content">
-        
-      </div>
+      <div class="modal__content"></div>
     </div>
   </body>
 </html>
